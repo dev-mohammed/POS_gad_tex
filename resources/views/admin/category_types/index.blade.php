@@ -34,12 +34,16 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>قطيفة</td>
-                                <td><a href="" class="btn btn-success">تعديل</a>
-                                    <a href="" class="btn btn-danger">حذف</a></td>
-                            </tr>
+                            @foreach($categoryTypes as $type)
+                                <tr>
+                                    <td>{{$type->id}}</td>
+                                    <td>{{$type->name}}</td>
+                                    <td><a href="{{route('getAdminEditCategoryType' , $type->id)}}"
+                                           class="btn btn-success">تعديل</a>
+                                        <a href="" class="btn btn-danger">حذف</a>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                             <tfoot>
                             <tr>
@@ -50,6 +54,7 @@
                             </tfoot>
                         </table>
                     </div><!-- /.box-body -->
+                    {{$categoryTypes->links()}}
                 </div><!-- /.box -->
             </div><!-- /.col -->
         </div><!-- /.row -->

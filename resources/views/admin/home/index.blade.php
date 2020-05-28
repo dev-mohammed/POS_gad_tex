@@ -16,13 +16,13 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h3>0</h3>
-                        <p>الاصناف</p>
+                        <h3>{{$categoryTypes}}</h3>
+                        <p>انواع الاصناف</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="#" class="small-box-footer">التفاصيل <i class="fa fa-arrow-circle-left"></i></a>
+                    <a href="{{route('getAdminCategoryTypes')}}" class="small-box-footer">التفاصيل <i class="fa fa-arrow-circle-left"></i></a>
                 </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
