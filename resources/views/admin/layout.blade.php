@@ -122,6 +122,8 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">القائمة الرئيسية</li>
+                <li><a href="{{route('getAdminHome')}}"><i class="fa fa-circle-o text-bold"></i> <span>الرئيسية</span></a>
+                </li>
                 <li><a href="{{route('getAdminCategoryTypes')}}"><i class="fa fa-circle-o text-red"></i> <span>انواع الاصناف</span></a>
                 </li>
                 <li><a href="{{route('getAdminCategories')}}"><i class="fa fa-circle-o text-yellow"></i> <span>الاصناف</span></a>

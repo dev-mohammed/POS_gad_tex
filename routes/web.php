@@ -21,6 +21,9 @@ Route::get('admin/home', 'Admin\HomeController@index')->name('getAdminHome');
 // category Types
 Route::get('admin/category/types', 'Admin\CategoryTypeController@index')->name('getAdminCategoryTypes');
 Route::get('admin/category/types/create', 'Admin\CategoryTypeController@create')->name('getAdminCreateCategoryType');
+Route::post('admin/category/types/store', 'Admin\CategoryTypeController@store')->name('postAdminStoreCategoryType');
+Route::get('admin/category/types/edit/{type}', 'Admin\CategoryTypeController@edit')->name('getAdminEditCategoryType');
+Route::post('admin/category/types/update/{id}', 'Admin\CategoryTypeController@update')->name('postAdminUpdateCategoryType');
 
 
 // Categories
